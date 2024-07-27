@@ -28,7 +28,7 @@ This repository contains a FastAPI application for managing candidate profiles. 
 1. **Clone the Repository**:
     ```bash
     git clone https://github.com/Ozzy1997/elevtus_assessment
-    cd https://github.com/Ozzy1997/elevtus_assessment
+    cd to directory ""
     ```
 
 2. **Create and Activate Virtual Environment**:
