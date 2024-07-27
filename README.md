@@ -27,8 +27,8 @@ This repository contains a FastAPI application for managing candidate profiles. 
 
 1. **Clone the Repository**:
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/Ozzy1997/elevtus_assessment
+    cd https://github.com/Ozzy1997/elevtus_assessment
     ```
 
 2. **Create and Activate Virtual Environment**:
@@ -67,13 +67,18 @@ This repository contains a FastAPI application for managing candidate profiles. 
 - **Health Check**: `GET /health`
 - **User Management**:
   - `POST /user`
-  - `GET /user/{user_id}`
-  - `PUT /user/{user_id}`
-  - `DELETE /user/{user_id}`
+  - `GET /user/{email}`
+  - `PUT was not requested and can be easily implemented`
+  - `DELETE was not requested and can be easily implemented`
 - **Candidate Management**:
   - `POST /candidate`
   - `GET /candidate/get_by_id`
   - `PUT /candidate/`
   - `DELETE /candidate/{candidate_id}`
 - **Search Candidates**: `GET /all-candidates`
+  - Fetch all candidates from the database. Optionally, you can provide a search query to filter results.
+  - The search query can be a simple text search or a specific field search in the format `field:value`.
+  - Examples:
+    - `search_query=John` will search across all text-indexed fields for 'John'.
+    - `search_query=email:john@example.com` will search for candidates with the email 'john@example.com'.
 - **Generate Report**: `GET /generate-report`

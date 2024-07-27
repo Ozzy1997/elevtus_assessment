@@ -4,6 +4,10 @@ from bson import UuidRepresentation
 from pydantic.json import pydantic_encoder
 from typing import Any
 
+import dotenv
+
+dotenv.load_dotenv()
+
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "Candidate Profile Management"
