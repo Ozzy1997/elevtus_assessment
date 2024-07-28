@@ -1,6 +1,6 @@
 import re
-from models.candidate import CandidateCreate, CandidateUpdate, CandidateInDB
-from repositories.candidate_repository import CandidateRepository
+from app.models.candidate import CandidateCreate, CandidateUpdate, CandidateInDB
+from app.repositories.candidate_repository import CandidateRepository
 from typing import Dict, List
 
 

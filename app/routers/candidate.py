@@ -1,9 +1,9 @@
 import io
 from fastapi import APIRouter, Depends, HTTPException
-from models.candidate import CandidateCreate, CandidateUpdate, CandidateInDB
-from services.candidate_service import CandidateService
-from core.deps import get_candidate_service, get_current_user
-from models.user import UserInDB
+from app.models.candidate import CandidateCreate, CandidateUpdate, CandidateInDB
+from app.services.candidate_service import CandidateService
+from app.core.deps import get_candidate_service, get_current_user
+from app.models.user import UserInDB
 from typing import List
 from fastapi.responses import StreamingResponse
 

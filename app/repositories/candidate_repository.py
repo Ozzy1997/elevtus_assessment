@@ -1,8 +1,8 @@
 from uuid import UUID
 from bson import UuidRepresentation
 from motor.motor_asyncio import AsyncIOMotorClient
-from models.candidate import CandidateCreate, CandidateUpdate, CandidateInDB
-from core.config import settings
+from app.models.candidate import CandidateCreate, CandidateUpdate, CandidateInDB
+from app.core.config import settings
 from typing import List
 import csv
 import io

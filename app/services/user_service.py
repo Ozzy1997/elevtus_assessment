@@ -1,6 +1,6 @@
-from models.user import UserCreate, UserInDB
-from repositories.user_repository import UserRepository
-from core.security import get_password_hash, verify_password
+from app.models.user import UserCreate, UserInDB
+from app.repositories.user_repository import UserRepository
+from app.core.security import get_password_hash, verify_password
 from uuid import uuid4
 
 

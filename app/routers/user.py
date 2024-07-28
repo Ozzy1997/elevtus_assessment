@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
-from models.user import UserCreate, UserInDB
-from services.user_service import UserService
-from core.deps import get_user_service
+from app.models.user import UserCreate, UserInDB
+from app.services.user_service import UserService
+from app.core.deps import get_user_service
 
 router = APIRouter()
 

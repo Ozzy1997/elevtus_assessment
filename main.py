@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from core.config import settings
-from routers import user, candidate
-from routers import auth
+from app.core.config import settings
+from app.routers import user, candidate
+from app.routers import auth
 from motor.motor_asyncio import AsyncIOMotorClient
 from contextlib import asynccontextmanager
 

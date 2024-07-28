@@ -1,10 +1,10 @@
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
-from core.security import decode_access_token
-from services.user_service import UserService
-from repositories.user_repository import UserRepository
-from repositories.candidate_repository import CandidateRepository
-from services.candidate_service import CandidateService
+from app.core.security import decode_access_token
+from app.services.user_service import UserService
+from app.repositories.user_repository import UserRepository
+from app.repositories.candidate_repository import CandidateRepository
+from app.services.candidate_service import CandidateService
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 

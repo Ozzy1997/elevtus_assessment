@@ -1,6 +1,6 @@
 from motor.motor_asyncio import AsyncIOMotorClient
-from models.user import UserCreate, UserInDB
-from core.config import settings
+from app.models.user import UserCreate, UserInDB
+from app.core.config import settings
 from bson import UuidRepresentation
 from uuid import UUID
 
